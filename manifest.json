@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "New World",
+  "description": "Shows the Sitecore icon in the address bar whenever a page is rendered by Sitecore (i.e. the HTML <body> tag has the class \"served-by-sc\").",
+  "version": "1.0",
+  "background": {
+  	"scripts": ["background.js"],
+  	"persistent": false
+  },
+
+  "page_action": {
+    "default_icon" : "sitecore-19.png",
+	"default_title" : "Page served by Sitecore"
+  },
+  "permissions": ["declarativeContent"],
+  "icons": {
+		"48" : "sitecore-48.png",
+		"128" : "sitecore-128.png"  	
+  }
+}
