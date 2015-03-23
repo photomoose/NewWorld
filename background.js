@@ -4,13 +4,8 @@ chrome.runtime.onInstalled.addListener(function() {
 	    chrome.declarativeContent.onPageChanged.addRules([{
 	      conditions: [
 	        new chrome.declarativeContent.PageStateMatcher({
-	        	pageUrl: { hostContains: "asos." },
 	          	css: ["body.served-by-sc"]
-	        }),
-	        new chrome.declarativeContent.PageStateMatcher({
-	        	pageUrl: { hostContains: "test.asosservices.com" },
-	          	css: ["body.served-by-sc"]
-	        }),	        
+	        })       
 	      ],
 	      actions: [new chrome.declarativeContent.ShowPageAction() ]
     	}]);
